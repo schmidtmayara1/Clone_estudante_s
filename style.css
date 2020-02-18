@@ -28,6 +28,7 @@ h1{
     border: 1px solid #9BABB7;
     border-radius: 3px;
     display: flex;
+    color: #1E9585;
     
 }
 .inputs_login input{
@@ -44,11 +45,12 @@ h1{
 #button{
     border-radius: 20px;
     border: 1px solid #1E9585;
-    width: 85px;
-    height: 30px;
+    width: 110px;
+    height: 35px;
     background-color: #1E9585;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFF;
+    filter: opacity(70%);
 
 }
   
