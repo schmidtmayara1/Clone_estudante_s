@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
     crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body > 
    
@@ -16,40 +17,65 @@
     <div id="container">
         
         <div class="login">
-            <h1><b>Bem - Vindo</b></h1>
-            <span id="subtitulo">ao Espaço do Estudante</span> <br><br>
+            <h1 v-bind:title="titulo"><b>{{ titulo }}</b></h1>
+            <span id="subtitulo">{{ subtitulo }}</span> <br><br>
+            
            
             <div class="inputs_login">
                 <i class="fa fa-user"></i>
-                <input type="text" placeholder="Usuário">
+                <input type="text" placeholder="Usuário" v-model="login">
     
             </div> <br>
             <div class="inputs_login">
                 <i class="fa fa-lock"></i>
-                <input type="password" placeholder="Senha">
+                <input type="password" placeholder="Senha" v-model="senha">
             </div> <br>
-            <button id = "button"><b>Entrar</b></button> <br><br>
+            
+            <button id = "button" @click="logar"><b>Entrar</b></button> <br><br>
 
+            
             <a id = "link" href="esqueceusenha.html">Esqueceu a senha?</a>
+
+            <span style="color: pink">{{logado}}</span> 
+           
 
             <img id = "foto1" src="./img/google-play-badge.png" alt="">
             <img id = "foto2" src="./img/apple-store-badge.png" alt="">
-            
-    
-            
-          
+              
+                      
         </div>
 
         <div class="estudante"></div>
         
-
-
     </div>
-  
-     
-    
+    <script>
+        let container = new Vue({
+            el: "#container", 
+            data: {
+                subtitulo:"ao espaço do estudante",
+                titulo: "Bem Vindo",
+                login: '',
+                senha: '',
+                logado: '',
+                
+            },methods:{
+                logar: function(){
+                    if(this.login=="senai" && this.senha=="123"){
+                        this.logado = 'Login logado com sucesso';
+                    }
+                    else
+                    {
+                        this.logado = 'Login Inválido!';
+                    }
+
+                }
+            }
+        }) 
+       
+
+    </script>
+           
     <!--<span id="telefone">nossos telefones</span>-->
- 
-    
+   
 </body>
 </html>
