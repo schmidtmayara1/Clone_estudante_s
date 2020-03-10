@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.menus-vertical{
+    background-color: black;
+    color: white;
+    width: 52px;
+    margin:0;
+    
+}
+
+.menus-vertical li{
+    height: 150px;
+    list-style:none;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.menus-vertical li:hover{
+    background-color: #E94E1B;
+    text-decoration: underline;
+}

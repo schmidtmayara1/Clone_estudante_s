@@ -1,0 +1,26 @@
+#menucompleto{
+    background-color: #009584;
+    width: 300px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+#nome{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px, none, 10px, none;
+}
+#caixa{
+    background-color: #00c27c;
+    width: 300px;
+    height: 300px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: white;
+}
+
+
+
