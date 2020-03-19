@@ -8,8 +8,6 @@ body{
     height: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 #usuario{
     width: 160px;
     height: 20px;
@@ -21,7 +19,6 @@ body{
     margin: 15px 15px 15px 15px;
     
 }
-
 .Menu_superior img {
     width: 30px;
     height: 30px;
@@ -40,16 +37,212 @@ body{
 #txt4{
     margin: 5px 5px 5px 5px;
     margin-left: 100px;
+    
 }
 .coala{
-  margin: auto;
-  display: block;
-  margin-top: 8%;
-  width: 350px;
-  height: 300px;
-  background-color: cornflowerblue;
-   
+    height: 220px;
+    width: 260px;
+    background-color: steelblue;
+    margin: 200px 400px 200px 800px;
+       
+}
 
+#caixa{
+    background:steelblue;
+    width: 240px;
+    height: 210px;
+    margin: 20px 30px 40px 75px;
+    display: flex;
+    float: right;
+    margin-top: -300px;
+    margin-right: 200px;
+    
+  
+
+}
+#rosto{
+    position: absolute;    
+    z-index: 100; /** orelha foi pra tras**/
+    width: 170px;
+    height: 90px;
+    margin: 40px;
+    margin-left: 45px;
+    background: #A6BECF;
+    border-radius: 60%;
+    justify-content: center;
+    padding-top: 70px;
+    display: flex; /** fica uma olho do lado do outro**/
+      
+} 
+#nariz{
+    width: 30px;
+    height: 60px;
+    background: #BE845F; ;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 20px; 
+    z-index: 100; 
+}
+.iris{
+    background: black;
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+    margin-top: 2px;
+    margin: 6px;
+    justify-content: center;
+  
+  
+}
+
+.olhos{
+background: cornsilk;
+display: flex;
+width: 60px;
+height: 60px;
+border-radius: 30px;
+padding-top: 4px;
+justify-content: center;
+margin-top: -22px;
+
+
+}
+.orelha{
+    background: #A6BECF;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}   
+
+.orelha2{
+    position: absolute;
+    border-radius: 50px;
+    width: 66px;
+    height: 68px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #819CAF;
+  }
+
+
+.artigo1{
+    height: 100px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    margin: 100px;
+    
+}
+.artigo2{
+    height: 100px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    float: right;
+    margin-right: 500px;
+    margin-top: -200px;
+    
+}
+.artigo3{
+    height: 100px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    float: left;
+    margin: 100px;
+    margin-top: -70px;
+    
+}
+.artigo4{
+    height: 100px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    float: right;
+    margin-right: 500px;
+    margin-top: -200px;
+    
+}
+#txt{
+    display: flex;
+    position: absolute;
+    
+}
+#h6-0{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 40px;
+    
+
+    
+}
+#sub-1{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 12px;
+    color: red;
+}
+#h6-1{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 40px;
+    
+}
+#sub-2{
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 12px;
+    color: royalblue;
+}
+#h6-2{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 40px;
+    
+}
+#sub-3{
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 12px;
+    color: royalblue;
+}
+#h6-3{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 40px;
+    
+}
+#sub-4{
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 12px;
+    color: red;
 }
 
 
+
+
+
+
+
+
+
+
+.subt{
+    font-size: 11.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin-left: 175px;
+    margin-top: 60px;
+}
+
+
+
+
+ 
